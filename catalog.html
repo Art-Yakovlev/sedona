@@ -12,7 +12,7 @@
                 <a class="navigation-logo" href="index.html">
                     <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" alt="Логотип Седона">
                 </a>
-                <ul class="naviigation-list">
+                <ul class="navigation-list">
                     <li class="navigation-item">
                         <a class="navigation-link" href="index.html">Главная</a>
                     </li>
@@ -41,7 +41,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="main-inner">
+        <main class="main-inner main-container">
             <div class="filter-container">
                 <header class="inner-header">
                     <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -109,8 +109,10 @@
                             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                             <!--Здесь будет слайдер-->
                         </fieldset>
-                        <button class="button button-accept filter-button-accept" type="submit">Применить</button>
-                        <button class="button button-reset" type="reset">Сбросить</button>
+                        <div class="catalog-filter-buttons">
+                            <button class="button button-accept filter-button-accept" type="submit">Применить</button>
+                            <button class="button button-reset" type="reset">Сбросить</button>
+                        </div>
                     </form>
                 </section>
             </div>
@@ -234,36 +236,38 @@
             </section>
         </main>
         <footer class="page-footer">
-            <section class="footer-social">
-                <h2 class="visually-hidden">Социальные сети</h2>
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a class="social-link" href="https://vk.com/htmlacademy">
-                            <span class="visually-hidden">VK</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="social-link" href="https://t.me/htmlacademy">
-                            <span class="visually-hidden">Telegram</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="social-link" href="https://youtube.com/user/htmlacademyru">
-                            <span class="visually-hidden">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer-contacts">
-                <h2 class="visually-hidden">Контакты</h2>
-                <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </section>
-            <section class="copyright">
-                <h2 class="visually-hidden">Об авторе</h2>
-                <a class="copyright-link" href="https://htmlacademy.ru/">
-                    <span class="visually-hidden">HTML Academy</span>
-                </a>
-            </section>
+            <div class="page-footer-container">
+                <section class="footer-social">
+                    <h2 class="visually-hidden">Социальные сети</h2>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item">
+                            <a class="social-link" href="https://vk.com/htmlacademy">
+                                <span class="visually-hidden">VK</span>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="social-link" href="https://t.me/htmlacademy">
+                                <span class="visually-hidden">Telegram</span>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="social-link" href="https://youtube.com/user/htmlacademyru">
+                                <span class="visually-hidden">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer-contacts">
+                    <h2 class="visually-hidden">Контакты</h2>
+                    <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                </section>
+                <section class="copyright">
+                    <h2 class="visually-hidden">Об авторе</h2>
+                    <a class="copyright-link" href="https://htmlacademy.ru/">
+                        <span class="visually-hidden">HTML Academy</span>
+                    </a>
+                </section>
+            </div>
         </footer>
     </body>
 </html>

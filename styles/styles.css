@@ -15,7 +15,15 @@
 }
 
 /*Global*/
+html{
+    height: 100%;
+}
 .page-body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1200px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -44,6 +52,21 @@
 /*Pages*/
 /*Header*/
 /*Navigation*/
+.navigation{
+    display: flex;
+}
+.navigation-logo{
+    margin-right: 28px;
+}
+.navigation-list{
+    width: 430px;
+    margin: 0;
+    padding: 0;
+}
+.navigation-user{
+    max-width: 310px;
+    margin-left: auto;
+}
 .navigation-link{
     font-size: 20px;
     line-height: 24px;
@@ -55,13 +78,20 @@
 }
 
 /*Main-index*/
+.main-container{
+    flex-grow: 1;
+}
 .main-index{
     background-color: #82B3D3;
     background-image: url(../images/divider.svg), url(../images/index-background.jpg);
+    background-position: 0 428px, top;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-
+.welcome-sedona{
+    display: block;
+    margin: 0 auto;
+}
 /*Advantages*/
 .advantages-intro{
     text-align: center;
@@ -80,7 +110,13 @@
 
 /*Advantages List*/
 .advantages-list{
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+.advantages-item{
+    display: flex;
+    justify-content: center;
 }
 .advantages-title{
     font-size: 22px;
@@ -99,7 +135,13 @@
     text-align: center;
 }
 .recommendations-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+.recommendations-item{
+    width: 400px;
 }
 .recommendations-title{
     font-size: 24px;
@@ -150,9 +192,20 @@
 }
 
 /*Footer*/
-.footer{
+.page-footer{
     color: #000000;
     background-color: #FFFFFF;
+}
+.page-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social-list{
+    margin: 0;
+    padding: 0;
+}
+.footer-social{
+    max-width: 200px;
 }
 .contacts-link{
     font-size: 40px;
@@ -162,12 +215,15 @@
     text-transform: uppercase;
     color: #000000;
 }
-
+.copyright{
+    width: 115px;
+}
 /*Catalog*/
 .filter-container{
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../images/catalog-background.jpg);
+    background-position: top;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -179,6 +235,18 @@
 .breadcrumbs-link{
     font-size: 16px;
     line-height: 21px;
+}
+.catalog-filter{
+    display: flex;
+}
+.catalog-filter-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 70px;
+}
+.catalog-filter-group:nth-child(2){
+    margin-right: auto;
 }
 .catalog-filter-title{
     font-size: 20px;
@@ -192,6 +260,7 @@
 
 /*Filter results*/
 .filter-results{
+    display: flex;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -227,6 +296,9 @@
 }
 
 /*Pagination*/
+.pagination-list{
+    display: flex;
+}
 .pagination-link{
     font-size: 20px;
     line-height: 36px;
