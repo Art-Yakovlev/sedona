@@ -15,6 +15,16 @@
 }
 
 /*Global*/
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 html{
     height: 100%;
 }
@@ -56,18 +66,24 @@ html{
     display: flex;
 }
 .navigation-logo{
+    margin-left: 70px;
     margin-right: 28px;
 }
 .navigation-list{
+    display: flex;
+    flex-wrap: wrap;
     width: 430px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 .navigation-user{
     max-width: 310px;
     margin-left: auto;
 }
 .navigation-link{
+    display: block;
+    padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -76,13 +92,17 @@ html{
     text-decoration: none;
     text-transform: capitalize;
 }
-
+.navigation-user .navigation-link{
+    min-width: 20px;
+    min-height: 20px;
+}
 /*Main-index*/
 .main-container{
+    padding-top: 51px;
     flex-grow: 1;
 }
 .main-index{
-    background-color: #82B3D3;
+    background-color: #FFFFFF;
     background-image: url(../images/divider.svg), url(../images/index-background.jpg);
     background-position: 0 428px, top;
     background-size: 100% auto;
@@ -91,18 +111,26 @@ html{
 .welcome-sedona{
     display: block;
     margin: 0 auto;
+    margin-bottom: 82px;
 }
 /*Advantages*/
 .advantages-intro{
+    padding-top: 69px;
+    padding-bottom: 69px;
     text-align: center;
 }
 .intro-title{
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .intro-description{
+    margin: 0 auto;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
@@ -132,24 +160,36 @@ html{
 
 /*Recommendations*/
 .recommendations-intro{
+    padding-top: 64px;
+    padding-bottom: 64px;
     text-align: center;
+}
+.recommendations-intro .intro-title{
+    margin-bottom: 20px;
 }
 .recommendations-list{
     display: flex;
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
 }
 .recommendations-item{
     width: 400px;
 }
+.recommendations-content{
+    padding: 81px 85px;
+}
 .recommendations-title{
+    margin: 102px auto 30px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .recommendations-description{
+    margin: 0 auto;
+    padding: 0;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -157,15 +197,24 @@ html{
 
 /*Search*/
 .search{
+    padding-top: 96px;
+    padding-bottom: 96px;
     text-align: center;
 }
+
 .search-title{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .search-description{
+    margin: 0 auto;
+    margin-bottom: 54px;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
@@ -173,6 +222,8 @@ html{
 
 /*Newsletter*/
 .newsletter{
+    padding-top: 96px;
+    padding-bottom: 104px;
     text-align: center;
     color: #FFFFFF;
     background-color: #82B3D3;
@@ -181,18 +232,25 @@ html{
     background-repeat: no-repeat;
 }
 .newsletter-title{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .newsletter-description{
+    margin: 0 auto;
+    margin-bottom: 54px;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
 }
 
 /*Footer*/
 .page-footer{
+    padding: 40px 70px 30px;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -201,8 +259,14 @@ html{
     justify-content: space-between;
 }
 .footer-social-list{
+    display: flex;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+}
+.footer-social-item{
+    width: 47px;
+    height: 40px;
 }
 .footer-social{
     max-width: 200px;
@@ -220,6 +284,8 @@ html{
 }
 /*Catalog*/
 .filter-container{
+    margin-bottom: 50px;
+    padding-top: 35px;
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../images/catalog-background.jpg);
@@ -227,14 +293,30 @@ html{
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+.inner-header{
+    margin: 0 70px;
+}
 .inner-header-title{
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
 }
+.breadcrumbs{
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style-type: none;
+}
 .breadcrumbs-link{
     font-size: 16px;
     line-height: 21px;
+}
+.catalog-filters{
+    margin: 0 70px;
 }
 .catalog-filter{
     display: flex;
@@ -261,24 +343,45 @@ html{
 /*Filter results*/
 .filter-results{
     display: flex;
+    margin: 0 70px 40px 70px;
+    margin-bottom: 40px;
     color: #000000;
     background-color: #FFFFFF;
 }
-.filter-results-title,
-.filter-results-quantity{
+.filter-results-title{
+    margin: 0;
+    margin-right: auto;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .select-control{
+    margin-right: 70px;
     font-size: 18px;
     line-height: 21px;
+    font-family: inherit;
     color: #333333;
     background-color: #FFFFFF;
 }
-
+.card-grid-toogle{
+    display: block;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+}
+.card-grid-toogle:not(:last-child){
+    margin-right: 8px;
+}
 /*Product cards*/
+.product-cards{
+    margin: 0 70px 40px 70px;
+}
+.product-cards-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 .product-cards-link{
     text-decoration: none;
 }
@@ -296,10 +399,26 @@ html{
 }
 
 /*Pagination*/
+.pagination-container{
+    margin: 0 70px 60px 70px;
+    padding-top: 40px;
+}
 .pagination-list{
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
-.pagination-link{
+.pagination-item:not(:last-child){
+    margin-right: 8px;
+}
+.pagination-link,
+.pagination-show-more{
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    padding: 12px 24px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -307,12 +426,20 @@ html{
     color: #FFFFFF;
     background-color: #82B3D3;
 }
+.pagination-show-more{
+    color: #000000;
+    background-color: #FFFFFF;
+}
 .pagination-link-current{
     color: #000000;
     background-color: #F2F2F2;
 }
 /*Newsletter Inner*/
 .newsletter-inner{
+    margin: 0 70px;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    text-align: center;
     color: #000000;
     background-color: #FFFFFF;
 }
