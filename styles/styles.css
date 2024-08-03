@@ -1,0 +1,238 @@
+/* Fonts */
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* Global */
+html{
+    height: 100%;
+}
+.page-body{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Pages */
+/* Header */
+/* Navigation */
+.navigation-link{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/*Main index */
+.main-index{
+    background-color: #ffffff;
+    background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+    background-position: 0 428px, top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+/* Advantages */
+.advantages-intro{
+    text-align: center;
+}
+.intro-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.intro-description{
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.advantages-list{
+    text-align: center;
+}
+.advantages-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-description{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+/* Recommendations */
+.recommendations-intro{
+    text-align: center;
+}
+.recommendations-list{
+    text-align: center;
+}
+.recommendations-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.recommendations-description{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+/* Search */
+.search{
+    text-align: center;
+}
+.search-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.search-description{
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+/* Newsletter */
+.newsletter{
+    text-align: center;
+    color: #ffffff;
+    background-color: #82b3d3;
+    background-image: url(../images/newsletter-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.newsletter-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.newsletter-description{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* Footer */
+.footer-contacts-link{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Catalog */
+.filter-container{
+    color: #ffffff;
+    background-color: #82b3d3;
+    background-image: url(../images/inner-background.jpg);
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.inner-title{
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-link{
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.catalog-filter-title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.control-label{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Filter results */
+.filter-results-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.select-control{
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Product cards */
+.product-cards-link{
+    text-decoration: none;
+}
+.product-cards-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+.product-cards-status,
+.product-cards-price{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+/* Pagination */
+.pagination-link,
+.pagination-show-more{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #82b3d3;
+}
+.pagination-show-more{
+    color: #000000;
+    background-color: #ffffff;
+}
+.pagination-link-current{
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+/* Newsletter Inner */
+.newsletter-inner{
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+.newsletter-inner .newsletter-description{
+    color: #333333;
+}
