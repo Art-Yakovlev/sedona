@@ -19,6 +19,11 @@ html{
     height: 100%;
 }
 .page-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 1200px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -29,6 +34,24 @@ html{
 /* Pages */
 /* Header */
 /* Navigation */
+.navigation{
+    display: flex;
+}
+.navigation-logo{
+    width: 140px;
+}
+.navigation-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navigation-user{
+    max-width: 310px;
+    margin-left: auto;
+}
 .navigation-link{
     font-size: 20px;
     line-height: 24px;
@@ -40,12 +63,19 @@ html{
 }
 
 /*Main index */
+.main-container{
+    flex-grow: 1;
+}
 .main-index{
     background-color: #ffffff;
     background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
     background-position: 0 428px, top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+.welcome-sedona{
+    display: block;
+    margin: 0 auto;
 }
 
 /* Advantages */
@@ -84,7 +114,14 @@ html{
     text-align: center;
 }
 .recommendations-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    list-style-type: none;
+}
+.recommendations-item{
+    width: 400px;
 }
 .recommendations-title{
     font-size: 24px;
@@ -135,6 +172,10 @@ html{
 }
 
 /* Footer */
+.page-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
 .footer-contacts-link{
     font-size: 40px;
     line-height: 40px;
@@ -166,6 +207,9 @@ html{
     color: #ffffff;
     text-decoration: none;
 }
+.catalog-filter{
+    display: flex;
+}
 .catalog-filter-title{
     font-size: 20px;
     line-height: 24px;
@@ -177,6 +221,9 @@ html{
 }
 
 /* Filter results */
+.filter-results{
+    display: flex;
+}
 .filter-results-title{
     font-size: 30px;
     line-height: 36px;
