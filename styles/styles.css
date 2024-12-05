@@ -40,6 +40,7 @@ html{
     height: 100%;
 }
 .page-body{
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -47,10 +48,33 @@ html{
     color: #000000;
     background-color: #FFFFFF;
 }
-
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
 /* Header */
+.page-header{
+    padding: 0 70px;
+}
+.navigation{
+    display: flex;
+}
+.navigation-logo{
+    width: 140px;
+    margin-right: 30px;
+}
 .navigation-list{
+    width: 450px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+.navigation-user{
+    max-width: 320px;
+    margin-left: auto;
 }
 .navigation-link{
     font-size: 20px;
@@ -63,13 +87,19 @@ html{
 }
 
 /* Main */
+main-container{
+    flex-grow: 1;
+}
 .main-index{
     background-color: #FFFFFF;
     background-image: url("/images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-
+.welcome-sedona{
+    display: block;
+    margin: 0 auto;
+}
 /* Advantages */
 .advantages-intro{
     text-align: center;
@@ -88,6 +118,8 @@ html{
 
 /* Advantages List */
 .advantages-list{
+    margin: 0;
+    padding: 0;
     text-align: center;
     list-style-type: none;
 }
@@ -103,6 +135,10 @@ html{
 
 /* Recommendations */
 .recommendations-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     text-align: center;
     list-style-type: none;
 }
@@ -156,6 +192,13 @@ html{
 .page-footer{
     background-color: #FFFFFF;
 }
+.page-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social{
+    max-width: 200px;
+}
 .social-list{
     list-style-type: none;
 }
@@ -167,7 +210,9 @@ html{
     text-transform: uppercase;
     color: #000000;
 }
-
+.copyright{
+    width: 115px;
+}
 /* Catalog */
 .filter-container{
     color: #FFFFFF;
@@ -194,6 +239,9 @@ html{
 }
 
 /* Catalog-filter*/
+.catalog-filter{
+    display: flex;
+}
 .catalog-filter-title{
     font-size: 20px;
     line-height: 24px;
@@ -206,6 +254,7 @@ html{
 
 /* Filter results*/
 .filter-results{
+    display: flex;
     color: #000000;
     background-color: #FFFFFF;
 }
